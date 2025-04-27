@@ -13,6 +13,8 @@ Amazon Redshift is a fully managed, cloud-based data warehouse service offered b
 ## Database Design
 The data warehouse employs a star schema architecture, which streamlines query execution and enhances the efficiency of data aggregation. At the core is the songplays fact table, surrounded by dimension tables that provide contextual information. This design facilitates intuitive data exploration and supports rapid analytical queries.
 
+![image_alt](https://github.com/harshsamani/redshift-songplay-analytics/blob/1df51af1155498af0d8c45fd733a9bebce447c58/Schema.png)
+
 ## Data Pipeline Design
 The ETL pipeline is developed using Python, leveraging libraries like pandas for effective data manipulation. Python's compatibility with PostgreSQL databases enables seamless data integration and processing.​
 
