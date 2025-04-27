@@ -5,7 +5,7 @@ This repository contains an ETL pipeline designed to load and transform data int
 
 - By centralizing and structuring this information in a consistent database, Sparkify can better address a variety of business questions.
 
-![image alt](https://github.com/harshsamani/redshift-songplay-analytics/blob/b5bfd9c8f7f0df75de54041e7894fbe789116409/Amazon-Redshift.png | width=100)
+![image alt](https://github.com/harshsamani/redshift-songplay-analytics/blob/b5bfd9c8f7f0df75de54041e7894fbe789116409/Amazon-Redshift.png)
 
 ## Why AWS Redshift?
 Amazon Redshift is a fully managed, cloud-based data warehouse service offered by AWS, designed to handle petabyte-scale data storage and management. It provides an efficient platform for gathering and storing large volumes of data, allowing businesses to analyze information using various business intelligence tools and uncover valuable insights for both internal operations and customer engagement.
@@ -13,7 +13,7 @@ Amazon Redshift is a fully managed, cloud-based data warehouse service offered b
 ## Database Design
 The data warehouse employs a star schema architecture, which streamlines query execution and enhances the efficiency of data aggregation. At the core is the songplays fact table, surrounded by dimension tables that provide contextual information. This design facilitates intuitive data exploration and supports rapid analytical queries.
 
-![image_alt](https://github.com/harshsamani/redshift-songplay-analytics/blob/1df51af1155498af0d8c45fd733a9bebce447c58/Schema.png | width=100)
+![image_alt](https://github.com/harshsamani/redshift-songplay-analytics/blob/1df51af1155498af0d8c45fd733a9bebce447c58/Schema.png)
 
 ## Data Pipeline Design
 The ETL pipeline is developed using Python, leveraging libraries like pandas for effective data manipulation. Python's compatibility with PostgreSQL databases enables seamless data integration and processing.​
@@ -22,7 +22,7 @@ The pipeline processes two primary data sources: song data and log data. Song da
 
 Initially, both song and log data, stored in JSON format on Amazon S3, are ingested into staging tables (staging_songs_table and staging_events_table) within Redshift. Subsequently, SQL-based transformations are applied to migrate data from the staging area into the structured fact and dimension tables, adhering to the star schema design.
 
-![image_alt](https://github.com/harshsamani/redshift-songplay-analytics/blob/66b49c9fdb86c7d40d8c5c5d880744f1b660ab6c/Pipeline.png | width=100)
+![image_alt](https://github.com/harshsamani/redshift-songplay-analytics/blob/66b49c9fdb86c7d40d8c5c5d880744f1b660ab6c/Pipeline.png)
 
 ## Project Files Overview
 create_tables.py: Drops existing tables and creates new ones, including staging, fact, and dimension tables.​
