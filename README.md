@@ -5,6 +5,8 @@ This repository contains an ETL pipeline designed to load and transform data int
 
 - By centralizing and structuring this information in a consistent database, Sparkify can better address a variety of business questions.
 
+![image alt](https://github.com/harshsamani/redshift-songplay-analytics/blob/b5bfd9c8f7f0df75de54041e7894fbe789116409/Amazon-Redshift.png)
+
 ## Why AWS Redshift?
 Amazon Redshift is a fully managed, cloud-based data warehouse service offered by AWS, designed to handle petabyte-scale data storage and management. It provides an efficient platform for gathering and storing large volumes of data, allowing businesses to analyze information using various business intelligence tools and uncover valuable insights for both internal operations and customer engagement.
 
