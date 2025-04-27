@@ -20,6 +20,8 @@ The pipeline processes two primary data sources: song data and log data. Song da
 
 Initially, both song and log data, stored in JSON format on Amazon S3, are ingested into staging tables (staging_songs_table and staging_events_table) within Redshift. Subsequently, SQL-based transformations are applied to migrate data from the staging area into the structured fact and dimension tables, adhering to the star schema design.
 
+![image_alt](https://github.com/harshsamani/redshift-songplay-analytics/blob/66b49c9fdb86c7d40d8c5c5d880744f1b660ab6c/Pipeline.png)
+
 ## Project Files Overview
 create_tables.py: Drops existing tables and creates new ones, including staging, fact, and dimension tables.​
 
